@@ -1,0 +1,44 @@
+
+# ##########################################################
+# Package
+
+[package]
+
+authors = [
+	"Matt Wilson <matthew@synesis.com.au>",
+]
+description = "recls (for Rust)"
+edition = "2021"
+homepage = "https://github.com/synesissoftware/recls.Rust"
+license = "BSD-3-Clause"
+name = "recls"
+readme = "README.md"
+version = "0.0.0"
+
+
+# ##########################################################
+# Targets
+
+
+# ##########################################################
+# Features
+
+[features]
+
+
+# ##########################################################
+# Dependencies
+
+[dependencies]
+
+fastparse = { version = "~0.0", default-features = false, features = [
+] }
+libpath = { version = "~0.0", default-features = false, features = [
+] }
+
+
+[dev-dependencies]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
