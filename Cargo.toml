@@ -13,11 +13,16 @@ homepage = "https://github.com/synesissoftware/recls.Rust"
 license = "BSD-3-Clause"
 name = "recls"
 readme = "README.md"
+repository = "https://github.com/synesissoftware/recls.Rust"
 version = "0.0.0"
 
 
 # ##########################################################
 # Targets
+
+[lib]
+name = "recls"
+path = "src/lib.rs"
 
 
 # ##########################################################
@@ -25,12 +30,26 @@ version = "0.0.0"
 
 [features]
 
+# General features:
+#
+# - "_NEVER_TO_BE_ENABLED" - this is a placeholder feature and must NEVER be specified;
+# - "null-feature" - a feature that has no effect (and, thus, is useful for simplifying driver scripts);
+
+_NEVER_TO_BE_ENABLED = []
+null-feature = []
+
+
+# Crate-specific features:
+#
+
 
 # ##########################################################
 # Dependencies
 
 [dependencies]
 
+base-traits = { version = "0", default-features = false, features = [
+] }
 fastparse = { version = "~0.0", default-features = false, features = [
 ] }
 libpath = { version = "~0.0", default-features = false, features = [
@@ -38,6 +57,9 @@ libpath = { version = "~0.0", default-features = false, features = [
 
 
 [dev-dependencies]
+
+criterion = "*"
+test_help-rs = { version = "0.1" }
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
