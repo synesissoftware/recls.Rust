@@ -1,7 +1,20 @@
+// src/lib.rs : Definition of the recls Rust package
 
-pub mod recls {
-}
+// ///////////////////////////////////////////////
+// crate-level feature definitions
+
+
+// ///////////////////////////////////////////////
+// crate-level imports
+
+
 
 #[cfg(test)]
 mod tests {
+    #![allow(non_snake_case)]
+
 }
+
+
+/* ///////////////////////////// end of file //////////////////////////// */
+
