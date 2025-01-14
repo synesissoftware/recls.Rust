@@ -1,13 +1,13 @@
 
-# rustfmt.toml for recls.Rust
+# rustfmt.toml for collect-rs
 #
-# configured for cargo-fmt 1.7.0-nightly
+# configured for cargo-fmt 1.86.0
 
 # array_width=60 # deprecated
 # attr_fn_like_width=70 # deprecated
 binop_separator="Front"
 blank_lines_lower_bound=0
-blank_lines_upper_bound=3
+blank_lines_upper_bound=2
 brace_style="SameLineWhere"
 # chain_width=60 # deprecated
 color="Auto"
@@ -33,7 +33,7 @@ format_macro_matchers=true
 format_strings=false
 group_imports="Preserve"
 hard_tabs=false
-hide_parse_errors=false
+# hide_parse_errors=false
 ignore=[
 
 ]
@@ -60,7 +60,9 @@ reorder_modules=true
 # report_fixme="Always"
 # report_todo="Never"
 # required_version="????"
+short_array_element_width_threshold=1
 # single_line_if_else_max_width=0 # deprecated
+show_parse_errors=true
 skip_children=false
 space_after_colon=true
 space_before_colon=true
