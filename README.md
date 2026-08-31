@@ -1,4 +1,4 @@
-# recls <!-- omit in toc -->
+# recls.Rust <!-- omit in toc -->
 
 **re**cursive **ls**, for **Rust**.
 
