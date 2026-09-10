@@ -7,13 +7,34 @@
 authors = [
 	"Matt Wilson <matthew@synesis.com.au>",
 ]
-description = "recls (for Rust)"
+categories = [
+	"filesystem",
+]
+description = "Reserved scaffold for recursive filesystem search (for Rust)"
+documentation = "https://docs.rs/recls"
 edition = "2021"
+exclude = [
+	".cargo",
+	".cursor",
+	".github",
+	".vimrc",
+	".vscode",
+	"scripts",
+	"target",
+]
 homepage = "https://github.com/synesissoftware/recls.Rust"
+keywords = [
+	"filesystem",
+	"path",
+	"recls",
+	"recursive-search",
+]
 license = "BSD-3-Clause"
 name = "recls"
+publish = false
 readme = "README.md"
 repository = "https://github.com/synesissoftware/recls.Rust"
+rust-version = "1.74"
 version = "0.0.0"
 
 
@@ -29,6 +50,9 @@ path = "src/lib.rs"
 # Features
 
 [features]
+
+default = [
+]
 
 # General features:
 #
@@ -46,20 +70,26 @@ null-feature = []
 # ##########################################################
 # Dependencies
 
+[build-dependencies]
+
 [dependencies]
 
-base-traits = { version = "0", default-features = false, features = [
-] }
-fastparse = { version = "~0.0", default-features = false, features = [
-] }
-libpath = { version = "~0.0", default-features = false, features = [
-] }
+base-traits = { version = "0.1", default-features = false, features = [
+]}
+fastparse = { version = "0.0.3", default-features = false, features = [
+]}
+libpath = { version = "0.0.3", default-features = false, features = [
+]}
 
 
 [dev-dependencies]
 
-criterion = "*"
-test_help-rs = { version = "0.1" }
+criterion = { version = "0.8", default-features = false, features = [
+]}
+shwild = { version = "0.2", default-features = false, features = [
+]}
+test_help-rs = { version = "0.2", default-features = false, features = [
+]}
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
