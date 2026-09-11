@@ -45,7 +45,7 @@ procedure should be inferred from this scaffold.
 This library repository retains **Cargo.lock** so local and CI validation can
 use reproducible dependency resolution.
 The existing formatting configuration retains nightly-only options, so
-**scripts/fmt** selects the pinned `nightly-2026-08-08` formatter.
+**scripts/fmt** selects the pinned `nightly-2026-09-10` formatter.
 
 
 ## Components

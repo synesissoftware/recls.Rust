@@ -1,20 +1,9 @@
-// src/lib.rs : Definition of the recls Rust package
-
-// ///////////////////////////////////////////////
-// crate-level feature definitions
-
-
-// ///////////////////////////////////////////////
-// crate-level imports
-
-
-
-#[cfg(test)]
-mod tests {
-    #![allow(non_snake_case)]
-
-}
+//! **recls.Rust** is currently an unpublished scaffold for recursive
+//! filesystem search in Rust.
+//!
+//! Recursive search is not implemented in this scaffold. No supported
+//! public API currently exists; path traversal, filtering, result types,
+//! tests, and examples are intentionally absent.
 
 
 /* ///////////////////////////// end of file //////////////////////////// */
-
