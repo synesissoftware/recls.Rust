@@ -1,6 +1,16 @@
 # recls.Rust - Changes <!-- omit in toc -->
 
 
+## 0.0.1 - 12th September 2026
+
+* Recorded the first 0.0.1 release of the unpublished recursive-search
+  scaffold;
+* Retained the absence of a supported public API and recursive-search
+  functionality;
+* Retained reproducible dependency resolution, CI validation, and the
+  version-reporting example;
+
+
 ## 0.0.0 - 31st August 2026
 
 * Recorded the existing 0.0.0 crate as an unpublished scaffold;
